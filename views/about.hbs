@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <style>
+    body {
+        background-color: aqua;
+    }
+    p1 {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 25px;
+        text-align: center;
+    }
+    p2 {
+        position: absolute;
+        top:15%;
+        left:10%;
+    }
+    p3 {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    p4 {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+    p5 {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+    #me {
+        position: absolute;
+        top:10%;
+        right: 20%;
+    }
+    #dog{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+    #dog2{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>About me:</h1>
+    <p1>My name is Ivan Shalagin </p1>
+    <p2>I am currently studying in the Computer Infomration Technology Diploma program at BCIT </p2>
+    <p3>In my free time I enjoying hanging out with my friends</p3>
+    <p4>My interests include: Board Games, Computer Games, Drinking to drown out the pain from lack of kahoot points, Watching movies</p4>
+    <img id="me" src="me.png" width="200">
+    <p5>I have a dog named charlie, and she likes to play fetch with a football</p5>
+    {{> aboutMenus}}
+    <img id="dog2" src='{{image}}'>
+    <img id="dog" src="dog.png" width="200" height="300">
+
+    
+
+</body>
+<footer>
+    {{> footer}}
+</footer>
+
+</html>
