@@ -1,6 +1,9 @@
 const express = require('express');
 const hbs = require('hbs');
 const weather_info = require('./weather.js')
+const fs = require('fs');
+
+const port = process.env.PORT || 8080;
 
 
 var app = express();
@@ -93,8 +96,8 @@ app.get('/404', (request, response) => {
     })
 })
 
-app.listen(8080, () => {
-    console.log('Server is up on the port 8080');
+app.listen(port, () => {
+    console.log(`Server is up on the port ${port}`);
     weather_info.getWeather(49.246292, -123.1207).then((result) =>{
         weather = `The temperature in Vancouver is: ${result.temperature}`
         console.log(weather)
